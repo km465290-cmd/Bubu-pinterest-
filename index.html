@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bubuu's Board</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="polish.css"></head><body>
+<div id="intro">
+  <div class="age"><span id="num">0</span></div>
+  <div class="t1 fade" id="t1">It's your 18th birthday coming 🎂</div>
+  <div class="t2 fade" id="t2">Do you want to see what's inside?</div>
+  <div class="btns fade" id="btns">
+    <button id="yes">Yes 💖</button>
+    <button id="no">No 🙈</button>
+  </div>
+</div>
+
+<div id="lock" class="hidden">
+  <svg class="logo" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#e60023"/><text x="12" y="12" text-anchor="middle" dominant-baseline="central" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="17" fill="#fff">C</text></svg>
+  <h1>Welcome to Pinterest</h1>
+  <p>Say <b>"I love you"</b> to unlock your board</p>
+  <button id="mic">🎤 Tap & say it</button>
+  <div class="or">or enter the code</div>
+  <input id="code" type="password" maxlength="1" inputmode="numeric" placeholder="•">
+  <p id="err"></p>
+</div>
+
+<div id="app" class="hidden">
+  <header>
+    <svg class="logo sm" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#e60023"/><text x="12" y="12" text-anchor="middle" dominant-baseline="central" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="17" fill="#fff">C</text></svg>
+    <div class="search" id="searchTxt"></div>
+  </header>
+  <div class="tabs" id="tabs"></div>
+  <div id="board"></div>
+</div>
+
+<div id="modal" class="hidden">
+  <div class="sheet">
+    <button id="close">✕</button>
+    <div id="modalBody"></div>
+    <div class="actions">
+      <button id="save">❤️ Save</button>
+      <span id="savedCount"></span>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body></html>
